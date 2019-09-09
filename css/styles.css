@@ -7,27 +7,34 @@ body{
                          "section section section"
                          "footer footer footer";
     grid-template-columns: 33.3vw 33.3vw 33.3vw;
-    grid-template-rows: 5vh 30vh 15vh 20vh 20vh 10vh;
+    grid-template-rows: 5vh 60vh 15vh 20vh 20vh 10vh;
     margin: 0;
 }
+nav{
+    grid-area: nav;
+}
 
+header{
+    grid-area: banner;
+    background-image: url('../imagens/banner.png')
+}
+main{
+    grid-area: main;
+}
 
-section{
+aside{
     grid-area: aside;
-    
-
+}
+section{
+    grid-area: section;
 }
 
 footer{
-    grid-template-areas: footer;
+    grid-area: footer;
    
 }
 
-header img{
-    display: flex;
-    grid-template-areas: banner;
-    height: 50px;
-    
+
 }
 
 

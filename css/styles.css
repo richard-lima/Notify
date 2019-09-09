@@ -1,17 +1,17 @@
 body{
     display: grid;
-    grid-template-areas: "nav"
-                         "banner"
-                         "main"
-                         "aside" "aside"
-                         "section"
-                         "footer";
+    grid-template-areas: "nav nav nav"
+                         "banner banner banner"
+                         "main main main"
+                         "aside aside aside"
+                         "section section section"
+                         "footer footer footer"
     grid-template-columns: 99.7vw;
     margin: 0 ;
 }
 
 
-aside{
+section{
     grid-area: aside;
     height: 50px;
 
@@ -23,7 +23,7 @@ footer{
 }
 
 header{
-    grid-template-areas: header;
+    grid-template-areas: banner;
     height: 50px;
 }
 

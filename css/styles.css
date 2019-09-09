@@ -1,0 +1,45 @@
+body{
+    display: grid;
+    grid-template-areas: "nav"
+                         "banner"
+                         "main"
+                         "aside" "aside"
+                         "section"
+                         "footer";
+    grid-template-columns: 99.7vw;
+    margin: 0 ;
+}
+
+
+aside{
+    grid-area: aside;
+    height: 50px;
+
+}
+
+footer{
+    grid-template-areas: footer;
+    height: 30px
+}
+
+header{
+    grid-template-areas: header;
+    height: 50px;
+}
+
+
+main{    
+    grid-area: banner;
+    height: 250px;
+}
+
+nav{
+    grid-template-areas: nav;
+    height: 3px;
+}
+
+section{
+    grid-template-areas: section;
+    height: 50px;
+}
+

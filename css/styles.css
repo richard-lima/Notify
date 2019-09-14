@@ -7,37 +7,61 @@ body{
                          "section section section"
                          "footer footer footer";
     grid-template-columns: 33.3vw 33.3vw 33.3vw;
-    grid-template-rows: 5vh 60vh 15vh 20vh 20vh 10vh;
     margin: 0;
 }
 nav{
     grid-area: nav;
+    height: 9px; 
+    display: flex; 
+    background-color: #31da7a;
 }
 
 header{
     grid-area: banner;
-    background-image: url('../imagens/banner.png')
+    background-image: url('../imagens/banner.png');
+    background-size: 1365px 510px;
+    display: flex;
+    justify-content: center;
+    height: 510px;
+    width: 100%;
+
 }
 main{
     grid-area: main;
 }
 
 aside{
+    background-color: #e3e3e3;
+    display: flex;
     grid-area: aside;
+    height: 360px;
+    justify-content: center;
 }
 section{
+    text-align: center;
     grid-area: section;
+    background-color: white;
+    height:300px;
 }
 
+section.redes{
+
+}
 footer{
+    align-items: center;
+    background-color: #e3e3e3;
+    display: flex;
     grid-area: footer;
-   
+    height: 100 px;
+    justify-content: space-around;
 }
 
-
+footer a{
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 12pt
 }
-
-
 
 
 main{    
@@ -52,8 +76,10 @@ nav{
    
 }
 
-section{
-    grid-template-areas: section;
-    
-}
+h3{
+    display: flex;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    justify-content: center;
 
+}

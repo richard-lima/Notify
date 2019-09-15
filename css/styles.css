@@ -10,10 +10,17 @@ body{
     grid-template-rows: 1vh 40vh 28vh 38vh 38vh 9vh;
     margin: 0;
 }
-.beneficios{
+section .beneficios{
+    align-items: center;
     background-color: #e3e3e3;
     display: flex;
     grid-area: beneficios;
+    justify-content: space-around;
+}
+.beneficios img{
+    background-color: green;
+    display: flex;
+    border-radius: 50px;
 }
 footer{
     align-items: center;
@@ -34,8 +41,15 @@ footer a{
     margin-left: 10%;
     margin-right: 5%;
 }
+.iconesRedesSociais img:hover{
+    background-color: green;
+    border-radius: 50px;
+}
 .iconesRedesSociais img{
+    margin: 5px;
     background-color: grey;
+    border-radius: 50px;
+
 }
 nav{
     grid-area: nav;

@@ -10,52 +10,41 @@ body{
     grid-template-rows: 1vh 70vh 28vh 38vh 38vh 9vh;
     margin: 0;
 }
-.depoimentos {
-    background-color: white;
-    grid-area: membros;
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-.depoimentos p{
+.botao{
+    color: white;
+    background-color: rgb(47, 141, 47);
+    border: none;
+    border-radius: 0px 15px 15px 0px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 10pt;
-    color: rgb(82, 80, 80);
-    margin-left: 15%;
-    margin-right: 15%;
-}
-.depoimentos h4{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 10pt;
-    color: rgb(43, 42, 42);
-}
-.depoimentos h3{
-    color: rgb(43, 42, 42);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12pt;
-    
+    height: 27px;
+    width: 65px;
 }
 .beneficios img{
     background-color: green;
     display: flex;
     border-radius: 50px;
 }
-.textoBanner{
+.campo{
     font-family: 'Montserrat', sans-serif;
-    padding: 3px;
-    text-align: center;
+    border: none;
+    height: 25px;
 }
-.textoBanner p{
-    color: white;
-    font-size: 10pt;
-    margin: 0;
+
+.emailGN{
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 footer{
     align-items: center;
     background-color: #e3e3e3;
     display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
     grid-area: footer;
-    justify-content: center;
+    justify-content: space-around;
+    margin: none;
+    text-decoration: none;
 }
 
 footer a{
@@ -65,9 +54,9 @@ footer a{
     font-size: 11pt;
     margin: 10px;
 }
-.GetNotify{
-    margin-left: 10%;
-    margin-right: 5%;
+.getNotify{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e3e3e3;
 }
 h1{
     color: white;
@@ -85,7 +74,6 @@ header{
     justify-content: space-around;
     padding: 20px;
 }
-
 main{
     background-color: #e3e3e3;
     display: grid;
@@ -103,7 +91,28 @@ main div{
 }
 main h2{
     color: rgb(43, 42, 42);
-    font-size: 15pt;
+    font-size: 10pt;
+}
+.membros{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-justify: center;
+    grid-area: membros;
+    background-color: #f8f8f8;
+}
+.membros p{
+    color: #a1a0a0;
+    font-size: 12px;
+    margin: 10px 60px;
+}
+.membros h4{
+    text-decoration: none;
+    margin: none;
+    color: #333333;
+    font-size: 13px;
+}
+.membros h3{
+    color: #333333;
 }
 main img{
     background-color: green;
@@ -113,8 +122,7 @@ main img{
 }
 main p{
     color: rgb(82, 80, 80);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 10pt;
+    text-align: center;
 }
 #maoBanner{
     display: none;
@@ -123,22 +131,41 @@ nav{
     grid-area: nav;
     background-color: #31da7a;
 }
-
 nav{
     grid-template-areas: nav;
     background-color: rgb(0,128,0);
-   
 }
-section .beneficios{
-    align-items: center;
-    background-color: #e3e3e3;
-    display: flex;
+section{
+    display: grid;
     grid-area: getNotify;
-    justify-content: space-around;
+    grid-template-areas:    'getNotify'
+                            'video';
+}
+.textoBanner{
+    font-family: 'Montserrat', sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+.textoBanner p{
+    color: white;
+    font-size: 10pt;
+    margin: 0;
+}
+.textoGN{
+    color: #868585;
+    font-size: 12px;
+    text-align: center;
+}
+.tituloGN{
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    padding-bottom: 0;
+    text-align: center;
 }
 .video{
     align-items: center;
-    margin-right: 10%;
-    margin-left: 5%;
-    
+    background-color:#e3e3e3;
+    display: flex;
+    justify-content: center;
+    justify-items: space-evenly;
 }

@@ -1,13 +1,60 @@
+aside{
+    align-items: center;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    grid-area: aside;
+}
+aside h1{
+    margin-top: 50px;
+    text-align: center;
+}
+aside h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    margin: 30px 50px 30px 50px;
+    text-align: center;
+}
+aside h3{
+    color: #0f0f0f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    margin: 20px 50px 25px 50px;
+    text-align: center;
+}
+aside > div > p{
+    align-items: center;
+    background-color: #9f9f9f;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+    padding: 10px;
+    
+}
+aside > div > img:hover{
+    filter: opacity(60%);
+}
+aside p {
+    color: #a7a7a7;
+    font-size:12pt;
+    margin: 25px 50px 0 50px;
+    text-align: justify;
+}
+aside div{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 350px;
+}
+aside div:nth-child(3) img{
+    margin: 2px 2px 2px 2px;
+    width: 50px;
+}
 body{
-    display: grid;
-    grid-template-areas:   "nav"
-                            "banner"
-                            "main"
-                            "getNotify"
-                            "membros"
-                            "footer";
-    grid-template-columns: 99vw;
-    grid-template-rows: 1vh 70vh 28vh 38vh 38vh 9vh;
     margin: 0;
 }
 .botao{
@@ -19,44 +66,36 @@ body{
     height: 27px;
     width: 65px;
 }
-.beneficios img{
-    background-color: green;
-    display: flex;
-    border-radius: 50px;
-}
 .campo{
     font-family: 'Montserrat', sans-serif;
     border: none;
     height: 25px;
+    width: 180px;
 }
-
-.emailGN{
-    align-items: center;
-    display: flex;
-    justify-content: center;
+.container{
+    display: grid;
+    grid-template-areas:   "nav"
+                            "banner"
+                            "main"
+                            "section"
+                            "aside"
+                            "footer";
+    grid-template-columns: 100vw;
+    /*grid-template-rows: 1vh 70vh 28vh 38vh 38vh 9vh;*/
 }
 footer{
     align-items: center;
     background-color: #e3e3e3;
     display: flex;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
+    flex-direction: column;
     grid-area: footer;
-    justify-content: space-around;
-    margin: none;
-    text-decoration: none;
 }
-
 footer a{
-    color: grey;
-    font-family: 'Montserrat', sans-serif;
+    color: #9f9f9f;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+    padding: 15px 0;
     text-decoration: none;
-    font-size: 11pt;
-    margin: 10px;
-}
-.getNotify{
-    font-family: 'Montserrat', sans-serif;
-    background-color: #e3e3e3;
 }
 h1{
     color: white;
@@ -64,86 +103,153 @@ h1{
     font-size: 40pt;
 }
 header{
+    background-image: url('../imagens/bannerMobile.png');
+    background-size: cover;
+    color: white;
+    display: flex;
+    filter: brightness(90%);
     grid-area: banner;
-    background-image: url('../imagens/banner.png');
-    background-repeat: no-repeat;
-    display: flex;
+    justify-content: space-evenly;
 }
-.iconesBanner{
+.icones{
+    align-items: center;
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
+    margin: 40px 0px 30px 0px;
+}
+.icones img{
+    background-color: #9f9f9f;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+}
+.icones img:hover{
+    background-color: rgb(47, 141, 47);
+    padding: 1px;
 }
 main{
-    background-color: #e3e3e3;
-    display: grid;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 10pt;
-    grid-template-areas:    'grid1'
-                            'grid2'
-                            'grid3';
-    grid-auto-rows: 33% 33% 33%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    grid-area: main;
 }
 main div{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-main h2{
-    color: rgb(43, 42, 42);
-    font-size: 10pt;
-}
-.membros{
+main h1{
     font-family: 'Montserrat', sans-serif;
+    font-size: 14pt;
     text-align: center;
-    text-justify: center;
-    grid-area: membros;
-    background-color: #f8f8f8;
+    color: rgb(22, 22, 22);
 }
-.membros p{
-    color: #a1a0a0;
-    font-size: 12px;
-    margin: 10px 60px;
+main img{
+    background-color: #2dcc73;
+    border-radius: 100%;
 }
-.membros h4{
-    text-decoration: none;
-    margin: none;
-    color: #333333;
-    font-size: 13px;
-}
-.membros h3{
-    color: #333333;
+main p{
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    margin: 0 50px;
+    text-align: justify;
 }
 main img{
     background-color: green;
     border-radius: 50%;
-    height: 20px;
-    padding: 10px;
-}
-main p{
-    color: rgb(82, 80, 80);
-    text-align: center;
+    margin-top: 50px;
+    padding: 15px;
 }
 #maoBanner{
     display: none;
 }
 nav{
-    grid-area: nav;
-    background-color: #31da7a;
-}
-nav{
-    grid-template-areas: nav;
     background-color: rgb(0,128,0);
+    grid-area: nav;
+    height: 1vh;
 }
 section{
-    display: grid;
-    grid-area: getNotify;
-    grid-template-areas:    'getNotify'
-                            'video';
+    align-items: center;
+    background-color: #e3e3e3;
+    display: flex;
+    flex-direction: column;
+    grid-area: section;
+    margin-top: 20px;
 }
-.textoBanner{
+section div:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section div video{
+    width: 90%;
+}
+section div div{
+    display: flex;
+    margin: 0 0 8vh 0;
+}
+section div h1{
     font-family: 'Montserrat', sans-serif;
+    font-size: 18pt;
+    margin: 20px 32px 0 32px;
+    padding: 20px 0;
+    text-align: left;
+    color: rgb(22, 22, 22);
+}
+section div:nth-child(2){
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    justify-items: space-evenly;
+    margin-bottom: 20px;
+}
+section div p{
+    color: #a7a7a7;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    margin: 0 5vw;
+    text-align: justify;
+}
+header div h1 span{
+    color: rgb(0,128,0);
+}
+header div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+    /*font-family: 'Montserrat', sans-serif;
     padding: 3px;
+    text-align: center;*/
+}
+header > div > p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    text-align: left;
+    padding: 0 33px;
+}
+header > div > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0vh 0 5vh 5vw;
+    width: 200px;
+}
+header > div > div > p{
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.671);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+header > div > div > p:hover{
+    background-color: rgba(63, 201, 63, 0.555);
+}
+header h1{
+    font-family: 'Pacifico', cursive; 
+    font-size: 35pt ;
+    margin: 5vh 45vw 10vh 10vw;
     text-align: center;
 }
 .textoBanner p{
